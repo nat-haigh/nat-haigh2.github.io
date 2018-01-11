@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>		</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style1.css" title="original" />
+	<link rel="alternate stylesheet" type="text/css" href="css/style3.css" title="grey" />
+	<script type="text/javascript" src="js/styleswitcher.js"></script>
+	<style>
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: ;
+}
+
+.navbar (
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+
+</style>
+</head>
+<body background="assets/indexpagebackground.png">
+
+<ul class="navbar">
+  <li><a href="indexpage.html">Home</a></li>
+  <li><a href="Musicpage.html">Music</a></li>
+  <li><a href="videopage.html">Videos</a></li>
+  <li><a href="report.html">Report & Video</a></li>
+  <li style="float:center; padding-left:26% "><a>30 SECONDS TO MARS</a></li>
+	<li style="float:right; padding-right: 3%; "><a class="active" href="custom.html">Custom</a></li>
+  </li>
+</ul>
+
+<h3></h3>
+<div style="background-color: grey; position: absolute; top: 10%; left: 40%; right: 50%; width: 400px; height: 100px; display: inline-block; text-align: center; box-sizing: border-box; font-size:2.0em; color: white; ">
+<p1> The videos below are some of the band's latest hits </p1>
+</div>
+
+<div class="video">
+<iframe align="middle" width="420" height="315" src="https://www.youtube.com/embed/8yvGCAvOAfM" frameborder="5" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe align="middle" width="420" height="315" src="https://www.youtube.com/embed/A-UKsDMbIP0" frameborder="5" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe	align="middle" width="420" height="315" src="https://www.youtube.com/embed/4Kvd-uquuhI" frameborder="5" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe align="middle" width="420" height="315" src="https://www.youtube.com/embed/hTMrlHHVx8A" frameborder="5" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<button style=" position: absolute; bottom: 0%;" type="button" onclick="myFunction()">Change background theme to Noir</button>
+<script>
+function myFunction() {
+    document.body.style.backgroundColor = "#c3c3c3";
+    document.body.style.backgroundImage = "url('assets/background_grey.png')";
+}
+</script>
+</body>
+
+</html>

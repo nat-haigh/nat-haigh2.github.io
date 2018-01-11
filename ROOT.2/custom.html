@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>		</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/style1.css" title="original" />
+	<link rel="alternate stylesheet" type="text/css" href="css/style3.css" title="grey" />
+	<script type="text/javascript" src="js/styleswitcher.js"></script>
+	<style>
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: ;
+}
+
+.navbar (
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+
+</style>
+</head>
+<body background="assets/indexpagebackground.png">
+
+<ul class="navbar">
+  <li><a href="indexpage.html">Home</a></li>
+  <li><a href="Musicpage.html">Music</a></li>
+  <li><a href="videopage.html">Videos</a></li>
+  <li><a href="report.html">Report & Video</a></li>
+  <li style="float:center; padding-left:26% "><a>30 SECONDS TO MARS</a></li>
+	<li style="float:right; padding-right: 3%; "><a class="active" href="custom.html">Custom</a></li>
+  </li>
+</ul>
+<div class="intro" style="background-color: red; position: absolute; top: 20%; left: 35%; color: black; padding: 20px; width: 30%; height: 20%; display: inline-block; text-align: center; box-sizing: border-box; font-size:2.5em; text-align: center; ">
+<p1>Use the button to change the theme for this and all other pages</br> </p1>
+</div>
+<button style=" position: absolute; top: 30%; left:15%;" type="button" onclick="myFunction()">Change background theme to Noir</button>
+<script>
+function myFunction() {
+    document.body.style.backgroundColor = "#c3c3c3";
+    document.body.style.backgroundImage = "url('assets/background_grey.png')";
+}
+</script>
+<p>Click the below button to receive your coordinates and the coordinates of the next concert the band are performing.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude +
+	"<br>And the bands next concert is at<br> Latitude: 34.0430 Longitude: 118.2673"
+}
+</script>
+
+</body>
+
+</html>
